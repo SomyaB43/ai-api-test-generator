@@ -19,3 +19,32 @@ This project uses AI to automatically generate test cases from API responses. Th
 ## Setup
 
 ### Install dependencies
+•	pip install requests pytest
+### Set API key
+•	export GROQ_API_KEY=your_api_key_here
+
+## Usage 
+
+Step 1: Run the generator
+python run_ai.py
+This will:
+•	Call the API
+•	Generate test cases using AI
+•	Save them to: tests/test_ai_users_generated.py
+
+Step 2: Run generated tests
+pytest tests/test_ai_users_generated.py
+•	Example Output
+•	Test functions validating
+•	Required fields
+•	Data types
+•	Email format
+•	Edge cases
+
+## Future Improvements 
+•	Automatically run tests after generation
+•	Add CLI interface
+•	Integrate with CI/CD pipelines
+
+
+
